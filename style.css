@@ -1,0 +1,323 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(Snoopy-Xe3K.ttf);
+}
+
+.container {
+  display: grid;
+  height: 1005;
+  background-color: rgba(238, 238, 238, 0.616);
+  gap: 1rem;
+}
+.header {
+  background-color: rgb(44, 44, 44);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 1rem;
+}
+.apple-logo {
+  justify-self: center;
+}
+.button {
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+  color: gray;
+}
+.iphone-13pro {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  height: 100vh;
+  padding: 5rem;
+}
+.iphone13pro-image {
+  justify-self: center;
+  padding-top: 0.3rem;
+}
+.title-iphone13pro {
+  text-align: center;
+  font-size: 80px;
+}
+.h2-iphone13pro {
+  text-align: center;
+  font-weight: 100;
+  padding: 1rem;
+}
+.links-iphone13pro {
+  display: grid;
+  grid-auto-flow: column;
+  text-align: center;
+  padding: 3rem;
+  justify-self: center;
+  gap: 7rem;
+}
+.links-iphone13pro a {
+  text-decoration: none;
+  font-size: large;
+  color: #39399c;
+}
+.iphone-13 {
+  background-color: #35283c;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.iphone-13 h1 {
+  color: white;
+  font-size: 80px;
+  padding: 1rem;
+}
+.iphone-13 h2 {
+  color: pink;
+  font-weight: 50;
+  padding: 1rem;
+}
+.iphone-13-2 {
+  padding-top: 0.1rem;
+}
+.links-iphone13 {
+  display: grid;
+  grid-auto-flow: column;
+  justify-self: center;
+  gap: 1rem;
+}
+.links-iphone13 a {
+  text-decoration: none;
+  color: #39399c;
+  padding: 1rem;
+}
+.macbook-pro {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.macbook-pro h1 {
+  display: grid;
+  padding-top: 9rem;
+  text-align: center;
+  font-size: 80px;
+}
+.macbook-pro h2 {
+  text-align: center;
+  font-weight: 100;
+}
+.macbookpro-links {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+  padding-bottom: 6rem;
+}
+
+.macbookpro-links a {
+  text-decoration: none;
+  color: #39399c;
+}
+.macbookpro-img {
+  padding-bottom: 7rem;
+}
+.airpods {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.airpods h1 {
+  font-size: 80px;
+}
+.airpods h2 {
+  font-weight: 100;
+}
+.airpods-links {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+  padding-bottom: 5rem;
+}
+.airpods-links a {
+  text-decoration: none;
+  color: #39399c;
+}
+
+.watch {
+  background-color: #f5f5f7;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.watch-title {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 0.5rem;
+}
+.watch-title h1 {
+  padding-top: 0.5rem;
+}
+.watch-img {
+  padding-top: 11rem;
+}
+.new-watch {
+  padding-top: 7rem;
+  color: orange;
+  text-align: center;
+}
+.watch h3 {
+  color: darkred;
+  text-align: center;
+}
+
+.watch-links {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+  padding: 1rem;
+}
+.watch-links a {
+  text-decoration: none;
+  color: #39399c;
+}
+.homepod-mini {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.homepod-mini h1 {
+  padding-top: 15rem;
+  font-size: 40px;
+}
+.homepod-mini h2 {
+  font-weight: 100;
+  padding: 1rem;
+}
+.homepod-links {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+}
+.homepod-links a {
+  text-decoration: none;
+  color: #39399c;
+}
+.ipad-mini {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  gap: 1rem;
+}
+.ipad-logo {
+  padding-top: 7rem;
+}
+.ipad-links {
+  padding-bottom: 6rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+}
+.ipad-links a {
+  text-decoration: none;
+  color: #39399c;
+}
+.card {
+  background-color: #080808;
+  display: grid;
+  height: 100vh;
+  color: gray;
+  place-items: center;
+}
+.card-title {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+.card-title h1 {
+  padding-top: 0.7rem;
+}
+.card-h2 {
+  display: grid;
+  grid-auto-flow: row;
+  justify-self: center;
+  text-align: center;
+  font-weight: 100;
+}
+.card-links {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+}
+.card-links a {
+  text-decoration: none;
+  color: #39399c;
+}
+.tv {
+  background-color: orange;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.tv-title {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 1rem;
+  padding-top: 5rem;
+}
+.tv-title h1 {
+  padding-top: 0.7rem;
+}
+
+.tv-main p {
+  font-family: myFirstFont;
+  font-size: 80px;
+  font-weight: bolder;
+  justify-self: center;
+  text-align: center;
+}
+#tv-first-p {
+  font-size: 50px;
+}
+.tv-bottom-p{
+  padding-bottom: 7rem;
+}
+.tv-stream{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  padding-bottom: 4rem;
+}
+.footer {
+  background-color: #e9e9e9;
+  display: grid;
+  height: 100vh;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.footer-1 {
+  display: grid;
+  grid-auto-flow: column;
+}
+.footer-1 p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.footer-title{
+  font-weight: bold;
+  display: grid;
+  padding-top: 1rem;
+}
+.footer-last a{
+  text-decoration: none;
+  color: #39399c;
+}
