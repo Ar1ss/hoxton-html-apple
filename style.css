@@ -12,17 +12,31 @@
 .container {
   display: grid;
   height: 1005;
-  background-color: rgba(238, 238, 238, 0.616);
+  background-color: rgba(231, 231, 231, 0.616);
   gap: 1rem;
 }
 .header {
   background-color: rgb(44, 44, 44);
-  display: grid;
-  grid-template-columns: auto 1fr auto;
   padding: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+.header ul{
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
+  list-style: none;
+  color:grey;
+}
+.header ul li a{
+  text-decoration: none;
+  color: grey;
 }
 .apple-logo {
-  justify-self: center;
+  width: 20px;
 }
 .button {
   background-color: rgba(240, 248, 255, 0);
@@ -32,12 +46,15 @@
 .iphone-13pro {
   background-color: rgb(255, 255, 255);
   display: grid;
-  height: 100vh;
+  height: 80vh;
   padding: 5rem;
-}
-.iphone13pro-image {
-  justify-self: center;
-  padding-top: 0.3rem;
+  background-image: url(/folder/iphone-13pro.jpg);
+  background-repeat:no-repeat;
+  background-size: 480px;
+  background-position: bottom;
+  justify-items: center;
+  align-content: start;
+  
 }
 .title-iphone13pro {
   text-align: center;
@@ -46,15 +63,14 @@
 .h2-iphone13pro {
   text-align: center;
   font-weight: 100;
-  padding: 1rem;
 }
 .links-iphone13pro {
   display: grid;
   grid-auto-flow: column;
   text-align: center;
-  padding: 3rem;
+  padding:1rem;
   justify-self: center;
-  gap: 7rem;
+  gap: 3rem;
 }
 .links-iphone13pro a {
   text-decoration: none;
@@ -64,13 +80,21 @@
 .iphone-13 {
   background-color: #35283c;
   display: grid;
-  height: 100vh;
+  height: 80vh;
   place-items: center;
+  background-image:url(/folder/iphone_13_cover.jpg);
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-position:bottom;
+  align-content: start;
+  justify-items: center;
+  
 }
 .iphone-13 h1 {
   color: white;
   font-size: 80px;
-  padding: 1rem;
+  padding-top: 4rem;
+
 }
 .iphone-13 h2 {
   color: pink;
@@ -94,12 +118,18 @@
 .macbook-pro {
   background-color: rgb(255, 255, 255);
   display: grid;
-  height: 100vh;
+  height: 80vh;
   place-items: center;
+  background-image: url(/folder/macbookpro.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 900px;
+  align-content:start;
+  justify-items: center;
 }
 .macbook-pro h1 {
   display: grid;
-  padding-top: 9rem;
+  padding-top: 4rem;
   text-align: center;
   font-size: 80px;
 }
@@ -111,7 +141,7 @@
   display: grid;
   grid-auto-flow: column;
   gap: 3rem;
-  padding-bottom: 6rem;
+  padding-top:1em;
 }
 
 .macbookpro-links a {
@@ -124,19 +154,27 @@
 .airpods {
   background-color: rgb(255, 255, 255);
   display: grid;
-  height: 100vh;
+  height: 80vh;
   place-items: center;
+  background-image: url(/folder/airpods.jpg);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center -60px;
+  align-content: end;
+
 }
 .airpods h1 {
   font-size: 80px;
 }
 .airpods h2 {
   font-weight: 100;
+  font-size: 20px;
 }
 .airpods-links {
   display: grid;
   grid-auto-flow: column;
   gap: 3rem;
+  padding:1rem;
   padding-bottom: 5rem;
 }
 .airpods-links a {
@@ -147,13 +185,18 @@
 .watch {
   background-color: #f5f5f7;
   display: grid;
-  height: 100vh;
-  place-items: center;
+  height: 80vh;
+  justify-items: center;
+  align-content: start;
+  background-image: url(./folder/watch.jpg);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 .watch-title {
   display: grid;
   grid-auto-flow: column;
-  place-items: center;
+  place-items: center;  
   gap: 0.5rem;
 }
 .watch-title h1 {
@@ -171,6 +214,10 @@
   color: darkred;
   text-align: center;
 }
+.watch h2{
+  font-size: 20px;
+  font-weight: 100;
+}
 
 .watch-links {
   display: grid;
@@ -185,15 +232,22 @@
 .homepod-mini {
   background-color: rgb(255, 255, 255);
   display: grid;
-  height: 100vh;
+  height: 80vh;
   place-items: center;
+  background-image: url(/folder/homepod.jpg);
+  background-position: center bottom;
+  background-size: 800px;
+  background-repeat: no-repeat;
+  justify-items: center;
+  align-content: start;
 }
 
 .homepod-mini h1 {
-  padding-top: 15rem;
+  padding-top: 7rem;
   font-size: 40px;
 }
 .homepod-mini h2 {
+  font-size: 20px;
   font-weight: 100;
   padding: 1rem;
 }
@@ -209,12 +263,22 @@
 .ipad-mini {
   background-color: rgb(255, 255, 255);
   display: grid;
-  height: 100vh;
+  height: 80vh;
   place-items: center;
   gap: 1rem;
+  background-image: url(/folder/ipad-mini-img.png);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: bottom center;
+  justify-items: center;
+  align-content: flex-start;
 }
 .ipad-logo {
   padding-top: 7rem;
+}
+.ipad-mini h2{
+  font-size: 20px;
+  font-weight: 100;
 }
 .ipad-links {
   padding-bottom: 6rem;
@@ -229,16 +293,22 @@
 .card {
   background-color: #080808;
   display: grid;
-  height: 100vh;
+  height: 80vh;
   color: gray;
   place-items: center;
+  background-image: url(/folder/apple-card.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  align-content: start;
+  justify-items: center;
+  gap: 0.5rem;
 }
 .card-title {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
   gap: 1rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 .card-title h1 {
   padding-top: 0.7rem;
@@ -249,11 +319,14 @@
   justify-self: center;
   text-align: center;
   font-weight: 100;
+  font-size: 20px;
+  padding-top: 0.5rem;
 }
 .card-links {
   display: grid;
   grid-auto-flow: column;
   gap: 3rem;
+  padding-top: 0.5rem;
 }
 .card-links a {
   text-decoration: none;
@@ -262,7 +335,7 @@
 .tv {
   background-color: orange;
   display: grid;
-  height: 100vh;
+  height: 80vh;
   place-items: center;
 }
 .tv-title {
@@ -320,4 +393,9 @@
 .footer-last a{
   text-decoration: none;
   color: #39399c;
+}
+.second-page{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
