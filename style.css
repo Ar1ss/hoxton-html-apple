@@ -16,12 +16,16 @@
   gap: 1rem;
 }
 .header {
-  background-color: rgb(44, 44, 44);
+  background-color: #000000cc;
   padding: 1rem;
   display: grid;
-  grid-auto-flow: column;
   padding-left: 20rem;
   padding-right: 20rem;
+  position:sticky;
+  top: 0;
+  backdrop-filter: blur(15px);
+  z-index: 10px;
+  
 }
 .header ul{
   display: grid;
@@ -46,8 +50,8 @@
 .iphone-13pro {
   background-color: rgb(255, 255, 255);
   display: grid;
-  height: 80vh;
-  padding: 5rem;
+  height: 700px;
+  padding: 3rem;
   background-image: url(/folder/iphone-13pro.jpg);
   background-repeat:no-repeat;
   background-size: 480px;
@@ -80,7 +84,7 @@
 .iphone-13 {
   background-color: #35283c;
   display: grid;
-  height: 80vh;
+  height: 700px;
   place-items: center;
   background-image:url(/folder/iphone_13_cover.jpg);
   background-repeat: no-repeat;
@@ -118,7 +122,7 @@
 .macbook-pro {
   background-color: rgb(255, 255, 255);
   display: grid;
-  height: 80vh;
+  height: 700px;
   place-items: center;
   background-image: url(/folder/macbookpro.png);
   background-repeat: no-repeat;
@@ -154,7 +158,7 @@
 .airpods {
   background-color: rgb(255, 255, 255);
   display: grid;
-  height: 80vh;
+  height: 700px;
   place-items: center;
   background-image: url(/folder/airpods.jpg);
   background-size: 300px;
@@ -185,7 +189,7 @@
 .watch {
   background-color: #f5f5f7;
   display: grid;
-  height: 80vh;
+  height: 700px;
   justify-items: center;
   align-content: start;
   background-image: url(./folder/watch.jpg);
@@ -232,7 +236,7 @@
 .homepod-mini {
   background-color: rgb(255, 255, 255);
   display: grid;
-  height: 80vh;
+  height: 700px;
   place-items: center;
   background-image: url(/folder/homepod.jpg);
   background-position: center bottom;
@@ -263,7 +267,7 @@
 .ipad-mini {
   background-color: rgb(255, 255, 255);
   display: grid;
-  height: 80vh;
+  height: 700px;
   place-items: center;
   gap: 1rem;
   background-image: url(/folder/ipad-mini-img.png);
@@ -293,7 +297,7 @@
 .card {
   background-color: #080808;
   display: grid;
-  height: 80vh;
+  height: 700px;
   color: gray;
   place-items: center;
   background-image: url(/folder/apple-card.jpg);
@@ -335,7 +339,7 @@
 .tv {
   background-color: orange;
   display: grid;
-  height: 80vh;
+  height: 700pxvh;
   place-items: center;
 }
 .tv-title {
@@ -398,4 +402,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+@media screen and (max-width : 1410px) {
+.second-page{
+  grid-template-columns: 1fr;
+}
+
 }
